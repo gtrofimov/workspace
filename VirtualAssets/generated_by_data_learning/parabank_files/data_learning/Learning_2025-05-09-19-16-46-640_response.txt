@@ -1,0 +1,13 @@
+--9ChzRL6EtK0iraqtDHAhhy4uIFAD66Mhqos9
+Content-Type: text/plain; charset=UTF-8
+Timestamp: 1746818206000
+
+HTTP/1.1 200 
+Date: Fri, 09 May 2025 19:16:46 GMT
+Content-Type: application/json
+Content-Length: 189
+Transfer-Encoding: chunked
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}

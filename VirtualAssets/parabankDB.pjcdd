@@ -1,0 +1,8 @@
+<jdbcProxyConfiguration xmlVersion="5" productVersion="0">
+ <JdbcProxyConfiguration className="com.parasoft.stub.jdbc.JdbcProxyConfiguration" version="1.2">
+  <mode>PASSTHROUGH</mode>
+  <logLevel>1</logLevel>
+  <logType>SERVER</logType>
+  <logFilePath></logFilePath>
+ </JdbcProxyConfiguration>
+</jdbcProxyConfiguration>

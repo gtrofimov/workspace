@@ -1,0 +1,13 @@
+--oM0Qj8FYn8VELkQHQlIRgAU9CwWsFsS6fL
+Content-Type: text/plain; charset=UTF-8
+Timestamp: 1746818207000
+
+HTTP/1.1 200 
+Date: Fri, 09 May 2025 19:16:47 GMT
+Content-Type: application/json
+Content-Length: 739
+Transfer-Encoding: chunked
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]

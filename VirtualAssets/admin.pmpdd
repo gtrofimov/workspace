@@ -1,0 +1,27 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.2.2">
+  <id>f3d044be-800f-4a9c-94c5-4a14c6cd656a-1682550837397</id>
+  <proxyCount>1</proxyCount>
+  <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" version="1.11.4">
+   <file>recorded_traffic/admin_%d_%t.txt</file>
+   <host>null</host>
+   <port>80</port>
+   <proxyServerPort>0</proxyServerPort>
+   <proxyServerPassword>AwAAABhKbnRVNCtHM2JMekEwK2pKRTVsWm53PT0=</proxyServerPassword>
+   <recordSecondaryTarget>false</recordSecondaryTarget>
+   <listenPath>/proxy/admin</listenPath>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <forwardPath>/echo2</forwardPath>
+    <host>soavirt-server</host>
+    <port>9080</port>
+   </HttpProxyTargetConnection>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <port>80</port>
+   </HttpProxyTargetConnection>
+  </HttpProxyConnection>
+ </ProxyConfiguration>
+</proxyConfiguration>

@@ -1,0 +1,70 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl
+Traffic-Format-Version: 1
+Protocol-Id: http-v1
+
+--bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: host.docker.internal:8090
+Secure: false
+Source-Address: 172.18.0.3:46144
+Timestamp: 1731001651270
+
+POST /LoanProcessorProxy HTTP/1.1
+connection: Upgrade, HTTP2-Settings
+content-length: 413
+host: soavirt-server:9080
+http2-settings: AAEAAEAAAAIAAAABAAMAAABkAAQBAAAAAAUAAEAA
+upgrade: h2c
+accept: */*
+content-type: text/xml; charset=UTF-8
+soapaction: ""
+user-agent: Apache-CXF/4.0.5
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2024-11-07T17:47:31.109Z</requestDate><customerId>12212</customerId><availableFunds>4872.93</availableFunds><loanAmount>1000000000</loanAmount><downPayment>1</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 172.18.0.3:46144
+Secure: false
+Source-Address: host.docker.internal:8090
+Timestamp: 1731001651307
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 444
+Date: Thu, 07 Nov 2024 17:47:31 GMT
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2024-11-07T17:47:31.294Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>false</approved><message>error.insufficient.funds</message></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: host.docker.internal:8090
+Secure: false
+Source-Address: 172.18.0.3:46144
+Timestamp: 1731001658811
+
+POST /LoanProcessorProxy HTTP/1.1
+connection: Upgrade, HTTP2-Settings
+content-length: 409
+host: soavirt-server:9080
+http2-settings: AAEAAEAAAAIAAAABAAMAAABkAAQBAAAAAAUAAEAA
+upgrade: h2c
+accept: */*
+content-type: text/xml; charset=UTF-8
+soapaction: ""
+user-agent: Apache-CXF/4.0.5
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2024-11-07T17:47:38.720Z</requestDate><customerId>12212</customerId><availableFunds>4872.93</availableFunds><loanAmount>1000</loanAmount><downPayment>150</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 172.18.0.3:46144
+Secure: false
+Source-Address: host.docker.internal:8090
+Timestamp: 1731001658824
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Thu, 07 Nov 2024 17:47:38 GMT
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2024-11-07T17:47:38.818Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--bG9QgZKcOV0c65XKPU9Y7fVyjukokrJlrmxGHeZl--

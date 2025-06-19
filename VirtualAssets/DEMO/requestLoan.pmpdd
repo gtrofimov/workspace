@@ -1,0 +1,29 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.3.3">
+  <lastModifiedBy>demo</lastModifiedBy>
+  <id>14da4b14-58a9-4938-b37b-46f029cbda00-1682550729729</id>
+  <proxies size="1">
+   <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" index="0" version="1.13.4">
+    <append>true</append>
+    <file>recorded_traffic/%n_%d_%t.txt</file>
+    <host>null</host>
+    <port>80</port>
+    <proxyServerPort>0</proxyServerPort>
+    <proxyServerPassword>AwAAABhKbnRVNCtHM2JMekEwK2pKRTVsWm53PT0=</proxyServerPassword>
+    <listenPath>/rest-loan-proxy</listenPath>
+    <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+     <keystoreType>PKCS12</keystoreType>
+     <truststoreType>PKCS12</truststoreType>
+     <forwardPath>/REST_Smart</forwardPath>
+     <host>soavirt-server</host>
+     <port>9080</port>
+    </HttpProxyTargetConnection>
+    <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+     <keystoreType>PKCS12</keystoreType>
+     <truststoreType>PKCS12</truststoreType>
+     <port>80</port>
+    </HttpProxyTargetConnection>
+   </HttpProxyConnection>
+  </proxies>
+ </ProxyConfiguration>
+</proxyConfiguration>

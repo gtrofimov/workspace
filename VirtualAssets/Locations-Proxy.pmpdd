@@ -1,0 +1,31 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.2.3">
+  <lastModifiedBy>demo</lastModifiedBy>
+  <id>866f6ddd-73f9-42eb-96b1-9a505bf5995d-1682550837567</id>
+  <proxyCount>1</proxyCount>
+  <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" version="1.13.4">
+   <file>recorded_traffic/Locations_%d_%t.txt</file>
+   <host>null</host>
+   <port>80</port>
+   <validStatusCodes>100-399</validStatusCodes>
+   <proxyServerHost>null</proxyServerHost>
+   <proxyServerPort>0</proxyServerPort>
+   <proxyServerUsername>null</proxyServerUsername>
+   <proxyServerPassword>AA==</proxyServerPassword>
+   <recordSecondaryTarget>false</recordSecondaryTarget>
+   <listenPath>/v1/locations</listenPath>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <forwardPath>/v1/locations</forwardPath>
+    <host>host.docker.internal</host>
+    <port>4040</port>
+   </HttpProxyTargetConnection>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.2">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <port>80</port>
+   </HttpProxyTargetConnection>
+  </HttpProxyConnection>
+ </ProxyConfiguration>
+</proxyConfiguration>

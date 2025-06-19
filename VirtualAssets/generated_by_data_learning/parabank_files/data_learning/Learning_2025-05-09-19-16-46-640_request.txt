@@ -1,0 +1,11 @@
+--PLjF0Kydp5GncturDhfvTbJvVDYNRZDiCowvFf
+Content-Type: text/plain; charset=UTF-8
+Secure: false
+
+GET /login/john/demo HTTP/1.1
+accept: application/json
+cache-control: no-cache
+pragma: no-cache
+user-agent: Java/21.0.6
+connection: keep-alive
+
